@@ -696,3 +696,6 @@ In this challenge, you need to create a user, a role, and add privileges. Your t
 4. Grant INSERT and UPDATE on the employees table to that role.
 5. Add the permission to create databases to that role.
 6. Assign that role to 'mia' and test the privileges with that user.
+
+
+## Thank you for visit
