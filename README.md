@@ -1,1 +1,704 @@
-# Database_Management_Project_GreenCycle_Film_Rental_Shop_-_Flights_Booking
+## Title: Database Management Project: GreenCycle Rental Shop & Flights Booking
+
+---
+
+Introduction:
+In this project, we embark on a journey through various SQL challenges, addressing different aspects of database management. From basic queries to complex data manipulations and optimizations, we explore the depths of SQL functionality using two distinct databases: a rental shop of films and a flight booking system.
+
+Description:
+Our project is divided into folders, each containing challenges focused on specific SQL topics such as querying, filtering, grouping, joining, and more. Within each folder, we encounter tasks of escalating complexity, testing our SQL proficiency and problem-solving skills. These challenges simulate real-world scenarios, providing hands-on experience in managing relational databases efficiently.
+
+Tool used: Postgres(pgAdmin 4)
+
+Problem Statement:
+The project aims to tackle diverse SQL challenges, ranging from basic data retrieval to advanced analytics and optimization techniques. By completing these challenges, we aim to demonstrate proficiency in SQL query formulation, database manipulation, and optimization strategies.
+
+Objectives:
+- To solve a series of SQL challenges spanning various topics and various levels.
+- To gain practical experience in managing databases, querying data, and performing complex analytics.
+- To develop skills in optimizing SQL queries, improving database performance, and ensuring data integrity.
+
+Goals:
+- To successfully complete each challenge, addressing all specified requirements.
+- To implement efficient SQL queries and optimizations to enhance database performance.
+- To gain insights into best practices for SQL query formulation, database design, and management.
+- To develop a comprehensive understanding of SQL functionality and its application in real-world scenarios.
+
+Conclusion:
+This project provides hands-on experience and problem-solving practice to master SQL for effective relational database management. By solving diverse challenges, we've improved query formulation, optimized database performance, and gained insights from data. It demonstrates our SQL proficiency for future data-driven decision-making and analysis..
+
+Referece -15 Days of SQL: The Complete SQL Masterclass 2024, [See Link](https://www.udemy.com/course/15-days-of-sql/?couponCode=KEEPLEARNING)
+
+---
+
+See the project by folder wise: 
+
+01 - Getting started with SQL!
+02 - Filtering
+03 - Grouping
+04 - Functions
+05 - Conditional Expressions
+06 - Joins
+07 - UNION & Subqueries
+08 - Course project
+09 - Managing tables & databases
+10 - Views & Data Manipulation
+11 - Window Functions
+12 - Grouping sets, rollups, self-joins
+13 - Course project
+14 - Stored procedures, transactions & user-defined functions
+15 - Indexes, Partitining & Query Optimization
+
+---
+
+The project completed the following the all challenges:
+
+############################## 01 - Getting started with SQL!
+
+Challenge 1:
+- The Marketing Manager requests a list of all customers, including their first name, last name, and email address.
+
+Challenge 2:
+- The Marketing Manager asks to order the customer list by last name in descending order (from "Z" to "A"). If last names are the same, the order should be based on first name in descending order as well.
+
+Challenge 3:
+- A marketing team member inquires about the different prices that have been paid, ordered from highest to lowest.
+
+Today's Challenges:
+1. Create a list of all the distinct districts customers are from.
+2. Determine the latest rental date.
+3. Find out how many films the company has.
+4. Count the number of distinct last names among the customers.
+
+############################## 02 - Filtering
+
+Challenge 1:
+- How many payments were made by the customer with customer_id = 100?
+- What is the last name of our customer with first name 'ERICA'?
+
+Challenge 2:
+- Rentals that have not been returned yet.
+- List of payment_ids with an amount less than or equal to $2.
+
+Challenge 3:
+- List of payments for customers 322, 346, and 354 where the amount is either less than $2 or greater than $10. It should be ordered by customer first (ascending) and then by amount in descending order.
+
+Challenge 4:
+- Number of payments made on January 26th and 27th, 2020 with an amount between 1.99 and 3.99.
+
+Challenge 5:
+- List of concerned payments based on 6 complaints from customers with IDs: 1, 2, 25, 67, 93, 124, 234. These payments should have occurred in January 2020 with amounts of 4.99, 7.99, and 9.99.
+
+Challenge 6:
+- Count of movies containing "Documentary" in the description.
+- Count of customers with a first name that is 3 letters long and ends with either 'X' or 'Y' in the last name.
+
+Day's Challenges:
+1. Number of movies containing 'Saga' in the description and having titles starting with 'A' or ending with 'R'. Use the alias 'no_of_movies'.
+2. List of all customers with 'ER' in the first name and 'A' as the second letter, ordered by last name in descending order.
+3. Count of payments with amounts either 0 or between 3.99 and 7.99, occurring on May 1st, 2020.
+
+############################## 03 - Grouping
+
+Challenge 1:
+- Your manager wants to gain insight into the films' replacement cost. Write a query to determine the minimum, maximum, average (rounded), and sum of the replacement cost of the films.
+
+Challenge 2:
+1. Determine which of the two employees (staff_id) is responsible for more payments.
+2. Find out which of the two employees is responsible for a higher overall payment amount.
+3. Calculate the changes in these amounts if payments with an amount equal to 0 are excluded.
+
+Challenge 3:
+1. Determine which employee had the highest sales amount in a single day.
+2. Find out which employee had the most sales in a single day (excluding payments with amount = 0).
+
+Challenge 4:
+1. Focus on the days with very high revenue in April 2020 (April 28, 29, and 30).
+2. Calculate the average payment amount grouped by customer and day, considering only days and customers with more than 1 payment. Order the results by the average amount in descending order.
+
+############################## 04 - Functions
+
+Challenge 1:
+- Identify customers whose first name or last name is more than 10 characters long, and output their names in all lowercase.
+
+Challenge 2:
+- Extract the last 5 characters of the email address, which always ends with '.org'. Additionally, extract just the dot '.' from the email address.
+
+Challenge 3:
+- Create an anonymized version of the email addresses where the first character is followed by '*', and then the last part starting with '@'. Note: email addresses always end with '@sakilacustomer.org'.
+
+Challenge 4:
+- Extract the first name from the email address and concatenate it with the last name, formatting it as "Last name, First name".
+
+Challenge 5:
+- Anonymize email addresses by displaying only the first and last letters of the local part, followed by '*', and then the first letter of the domain, followed by '.*@sakilacustomer.org'.
+
+Challenge 6:
+- Analyze payments to find the month and day of the week with the highest total payment amount, as well as the highest amount spent by a customer in a week.
+
+Challenge 7:
+- Sum and group data in the following formats:
+  - "Fri, 24/01/2020"
+  - "May, 2020"
+  - "Thu, 02:44"
+
+Challenge 8:
+- Create a list of all rental durations for customer_id 35, and determine which customer has the longest average rental duration.
+
+############################## 05 - Conditional Expressions
+
+Challenge 1:
+- Create a list of films including the ratio of rental rate to replacement cost, where the rental rate is less than 4% of the replacement cost. Display the film_ids along with the percentage rounded to 2 decimal places.
+
+Challenge 2:
+- Determine the number of flights that departed in each season: Winter (December, January, February), Spring (March, April, May), Summer (June, July, August), and Fall (September, October, November).
+- Create a tier list based on certain criteria:
+  1. Movies with a rating of 'PG' or 'PG-13', or a length greater than 210 minutes: 'Great rating or long (tier 1)'.
+  2. Movies with a description containing 'Drama' and a length greater than 90 minutes: 'Long drama (tier 2)'.
+  3. Movies with a description containing 'Drama' and a length not greater than 90 minutes: 'Short drama (tier 3)'.
+  4. Movies with a rental rate less than $1: 'Very cheap (tier 4)'.
+- If a movie fits into multiple categories, assign it the higher tier.
+- Filter the movies to include only those that fall into one of these four tiers.
+
+Challenge 3:
+- Replace null values in the dataset.
+
+############################## 06 - Joins
+Challenge 1:
+- The airline company wants to understand in which category they sell most tickets.
+- How many people choose seats in the category Business, Economy, or Comfort?
+
+Challenge 2:
+- The flight company is trying to find out what their most popular seats are.
+- Find out which seat has been chosen most frequently. Ensure all seats are included even if they have never been booked.
+- Are there seats that have never been booked?
+- Determine which row (A, B,...,H) has been chosen most frequently.
+
+Challenge 3:
+- The company wants to run a phone call campaign on all customers in Texas (district).
+- Identify customers (first_name, last_name, phone number, and their district) from Texas.
+- Are there any (old) addresses that are not related to any customer?
+
+Challenge 4:
+- Get the average amount for different seat numbers.
+
+Challenge 5:
+- The company wants to customize their campaigns to customers depending on the country they are from.
+- Which customers are from Brazil?
+- Write a query to get first_name, last_name, email, and the country from all customers from Brazil.
+
+Additional Questions:
+
+Question 1:
+- Which passenger (passenger_name) has spent the most amount in their bookings (total_amount)?
+Answer: ALEKSANDR IVANOV with 80964000.
+
+Question 2:
+- Which fare_condition has ALEKSANDR IVANOV used the most?
+Answer: Economy 2131 times.
+
+Question 3:
+- Which title has GEORGE LINTON rented the most often?
+Answer: CADDYSHACK JEDI - 3 times.
+
+############################## 07 - UNION & Subqueries
+Challenge 1:
+- Select all of the films where the length is longer than the average of all films.
+- Return all the films that are available in the inventory in store 2 more than 3 times.
+- Return all customers' first names and last names that have made a payment on '2020-01-25'.
+- Return all customers' first names and email addresses that have spent more than $30.
+- Return all the customers' first and last names that are from California and have spent more than $100 in total.
+
+Challenge 2:
+- What is the average total amount spent per day (average daily revenue)?
+
+Challenge 3:
+- Show all the payments together with how much the payment amount is below the maximum payment amount.
+
+Challenge 4:
+- Show only those movie titles, their associated film-id, and replacement_cost with the lowest replacement_costs for in each rating category - also show the rating.
+- Show only those movie titles, their associated film_id, and the length that have the highest length in each rating category - also show the rating.
+
+More Challenges:
+- Show all the payments plus the total amount for every customer as well as the number of payments of each customer.
+- Show only those films with the highest replacement costs in their rating category plus show the average replacement cost in their rating category.
+- Show only those payments with the highest payment for each customer's first name - including the payment_id of that payment.
+- How would you solve it if you would not need to see the payment ID?
+
+############################## 08 - Course project
+
+#Question 1:
+
+Task: Create a list of all the different (distinct) replacement costs of the films.
+
+Question: What's the lowest replacement cost?
+
+Answer Will be: $9.99
+
+#Question 2:
+
+Task: Write a query that gives an overview of how many films have replacements costs in the following cost ranges:
+
+- low: $9.99 - $19.99
+- medium: $20.00 - $24.99
+- high: $25.00 - $29.99
+
+Question: How many films have a replacement cost in the "low" group?
+
+Answer Will be: 514
+
+#Question 3:
+
+Task: Create a list of the film titles including their title, length, and category name ordered descendingly by the length. Filter the results to only the movies in the category 'Drama' or 'Sports'.
+
+Question: In which category is the longest film, and how long is it?
+
+Answer Will be: Sports and 184 minutes
+
+#Question 4:
+
+Task: Create an overview of how many movies (titles) there are in each category (name).
+
+Question: Which category (name) is the most common among the films?
+
+Answer Will be: Sports with 74 titles
+
+#Question 5:
+
+Task: Create an overview of the actors' first and last names and in how many movies they appear.
+
+Question: Which actor is part of the most movies?
+
+Answer Will be: Susan Davis with 54 movies
+
+#Question 6:
+
+Task: Create an overview of the addresses that are not associated with any customer.
+
+Question: How many addresses are that?
+
+Answer Will be: 4
+
+#Question 7:
+
+Task: Create an overview of the cities and how much sales (sum of amount) have occurred there.
+
+Question: Which city has the most sales?
+
+Answer Will be: Cape Coral with a total amount of $221.55
+
+#Question 8:
+
+Task: Create an overview of the revenue (sum of amount) grouped by a column in the format "country, city".
+
+Question: Which country, city has the least sales?
+
+Answer Will be: United States, Tallahassee with a total amount of $50.85
+
+#Question 9:
+
+Task: Create a list with the average of the sales amount each staff_id has per customer.
+
+Question: Which staff_id makes in average more revenue per customer?
+
+Answer Will be: staff_id 2 with an average revenue of $56.64 per customer
+
+#Question 10:
+
+Task: Create a query that shows the average daily revenue of all Sundays.
+
+Question: What is the daily average revenue of all Sundays?
+
+Answer Will be: $1410.65
+
+#Question 11:
+
+Task: Create a list of movies - with their length and their replacement cost - that are longer than the average length in each replacement cost group.
+
+Question: Which two movies are the shortest in that list and how long are they?
+
+Answer Will be: CELEBRITY HORN and SEATTLE EXPECTATIONS with 110 minutes
+
+#Question 12:
+
+Task: Create a list that shows how much the average customer spent in total (customer lifetime value) grouped by the different districts.
+
+Question: Which district has the highest average customer lifetime value?
+
+Answer Will be: Saint-Denis with an average customer lifetime value of $216.54
+
+#Question 13:
+
+Task: Create a list that shows all payments including the payment_id, amount, and the film category (name) plus the total amount that was made in this category. Order the results ascendingly by the category (name) and as the second order criterion by the payment_id ascendingly.
+
+Question: What is the total revenue of the category 'Action' and what is the lowest payment_id in that category 'Action'?
+ 
+Answer Will be: Total revenue in the category 'Action' is $4375.85 and the lowest payment_id in that category is 16055.
+
+#Bonus Question 14:
+
+Task: Create a list with the top overall revenue of a film title (sum of amount per title) for each category (name).
+
+Question: Which is the top-performing film in the animation category?
+
+Answer Will be: DOGMA FAMILY with $178.70.
+
+############################## 09 - Managing tables & databases
+
+Challenge 1
+
+#ALTER TABLE After create the table as below:
+CREATE TABLE director (
+director_id SERIAL PRIMARY KEY,
+director_account_name VARCHAR (20) UNIQUE,
+first_name VARCHAR(50) ,
+last_name VARCHAR(50) DEFAULT 'Not specified' ,
+date_of_birh DATE,
+address_id INT REFERENCES address (address_id))
+SELECT * FROM director
+
+1. Change the data type of `director_account_name` to VARCHAR (30).
+2. Remove the default value on `last_name`.
+3. Add the constraint `NOT NULL` to `last_name`.
+4. Add a new column `email` with data type VARCHAR (40).
+5. Rename `director_account_name` to `account_name`.
+6. Rename the table from `director` to `directors`.
+
+Challenge 2 
+- Create a table called `songs` with the following columns: `song_id`, `song_name`, `genre`, `price`, `release_date`.
+1. During creation, set the default value of `genre` to 'Not defined'.
+2. Add the `NOT NULL` constraint to the `song_name` column.
+3. Add a constraint with a default name to ensure the `price` is at least 1.99.
+4. Add the constraint `date_check` to ensure the `release_date` is between today and 01-01-1950.
+5. Try to insert a row with the following values: `song_id`, `song_name`, `genre`, `price`, `release_date`.
+6. Modify the constraint to allow 0.99 as the lowest possible price.
+7. Try again to insert the row.
+
+############################## 10 - Views & Data Manipulation
+
+Challenge:
+- Update all rental prices that are 0.99 to 1.99.
+- Alter the customer table:
+  1. Add the column initials (data type varchar(10)).
+  2. Update the values to the actual initials, for example, Frank Smith should be F.S.
+
+Challenge:
+- Delete the rows in the payment table with payment_id 17064 and 17067.
+
+Challenge: CREATE TABLE AS
+- Create a new table named "customer_spendings" and populate it with the total spending per customer.
+
+Challenge: 
+- Create a view called "films_category" that shows a list of film titles including their title, length, and category name, ordered descendingly by the length.
+- Filter the results to only the movies in the category 'Action' and 'Comedy'.
+
+Challenge:
+- In this challenge, we use the view "v_customer_info" as follows:
+  - Create a view "v_customer_info" to display customer information along with address details.
+ 
+CREATE VIEW v_customer_info AS
+SELECT cu.customer_id,
+	cu.first_name || ' ' || cu.last_name AS name,
+	a.address,
+	a.postal_code,
+	a.phone,
+	city.city,
+	country.country
+	 FROM customer cu
+	 JOIN address a ON cu.address_id = a.address_id
+	 JOIN city ON a.city_id = city.city_id
+	 JOIN country ON city.country_id = country.country_id
+ORDER BY customer_id;
+
+
+Tasks:
+1. Rename the view to "v_customer_information".
+2. Rename the customer_id column to "c_id".
+3. Add the "initial" column as the third column to the view by replacing the view.
+
+############################## 11 - Window Functions
+
+Challenge:
+- Write a query that returns the list of movies including:
+  - film_id,
+  - title,
+  - length,
+  - category,
+  - average length of movies in that category.
+- Order the results by film_id.
+- Write a query that returns all payment details including the number of payments made by each customer and the amount.
+- Order the results by payment_id.
+
+Challenge: 
+- Write a query that returns the running total of flight delays (difference between actual_arrival and scheduled arrival) ordered by flight_id, including the departure airport.
+- As a second query, calculate the same running total, but also partition by the departure airport.
+
+Challenge: 
+- Write a query that returns the customers' name, the country, and the number of payments they have. Use the existing view customer_list.
+- Afterward, create a ranking of the top customers with the most sales for each country. Filter the results to only the top 3 customers per country.
+
+Challenge:
+- Write a query that returns the revenue of the day and the revenue of the previous day.
+  - Sum
+    - 62.86
+    - 563.64
+    - 736.30
+  - Day
+    - 2020-01-24
+    - 2020-01-25
+    - 2020-01-26
+  - Previous_day
+    - [null]
+    - 62.86
+    - 563.64
+  - Difference
+    - [null]
+    - 500.78
+    - 172.66
+- Afterwards, calculate the percentage growth compared to the previous day.
+
+Additional Challenge
+- Write a query that calculates the share of revenue each staff_id makes per customer. The result should include:
+  - First name,
+  - Last name,
+  - Staff_id,
+  - Total revenue,
+  - Percentage.
+  
+############################## 12 - Grouping sets, rollups, self-joins
+
+Challenge:
+- Write a query that returns the sum of the amount for each customer (first name and last name) and each staff_id. Also, add the overall revenue per customer.
+
+Challenge:
+- Write a query that calculates a booking amount rollup for the hierarchy of quarter, month, week in month, and day.
+
+Challenge:
+- Write a query that returns all grouping sets in all combinations of customer_id, date, and title with the aggregation of the payment amount.
+- The desired result should look like this:
+  - customer_id
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+  - date
+    - 2020-01-25
+    - 2020-01-25
+    - 2020-01-28
+    - 2020-01-28
+    - 2020-02-15
+    - 2020-02-15
+  - title
+    - PATIENT SISTER
+    - [null]
+    - TALENTED HOMICIDE
+    - [null]
+    - DETECTIVE VISION
+    - FERRIS MOTHER
+
+Challenge:
+- Find all the pairs of films with the same length! As the columns, use title, title, and length.
+
+############################## 13 - Course project
+
+Task 1
+
+Task 1.1:
+Set up the table called employees with the specified columns and NOT NULL constraints for first_name, last_name, job_position, start_date, and birth_date. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-45-9481317717076af04727664bc6344aec.png)
+
+Task 1.2:
+Set up an additional table called departments with the specified columns and ensure no column allows nulls. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-45-ba2470af10baa81827a89a554c5f57c0.png)
+
+Task 2
+
+Alter the employees table as follows:
+- Set the column department_id to not null.
+- Add a default value of CURRENT_DATE to the column start_date.
+- Add the column end_date with an appropriate data type.
+- Add a constraint called birth_check that doesn't allow birth dates in the future.
+- Rename the column job_position to position_title.
+
+Task 3
+
+Task 3.1:
+Insert the provided values into the employees table, handling any errors that arise during insertion.
+
+Values:
+
+(1,'Morrie','Conaboy','CTO',21268.94,'2005-04-30','1983-07-10',1,1,NULL,NULL),
+(2,'Miller','McQuarter','Head of BI',14614.00,'2019-07-23','1978-11-09',1,1,1,NULL),
+(3,'Christalle','McKenny','Head of Sales',12587.00,'1999-02-05','1973-01-09',2,3,1,NULL),
+(4,'Sumner','Seares','SQL Analyst',9515.00,'2006-05-31','1976-08-03',2,1,6,NULL),
+(5,'Romain','Hacard','BI Consultant',7107.00,'2012-09-24','1984-07-14',1,1,6,NULL),
+(6,'Ely','Luscombe','Team Lead Analytics',12564.00,'2002-06-12','1974-08-01',1,1,2,NULL),
+(7,'Clywd','Filyashin','Senior SQL Analyst',10510.00,'2010-04-05','1989-07-23',2,1,2,NULL),
+(8,'Christopher','Blague','SQL Analyst',9428.00,'2007-09-30','1990-12-07',2,2,6,NULL),
+(9,'Roddie','Izen','Software Engineer',4937.00,'2019-03-22','2008-08-30',1,4,6,NULL),
+(10,'Ammamaria','Izhak','Customer Support',2355.00,'2005-03-17','1974-07-27',2,5,3,2013-04-14),
+(11,'Carlyn','Stripp','Customer Support',3060.00,'2013-09-06','1981-09-05',1,5,3,NULL),
+(12,'Reuben','McRorie','Software Engineer',7119.00,'1995-12-31','1958-08-15',1,5,6,NULL),
+(13,'Gates','Raison','Marketing Specialist',3910.00,'2013-07-18','1986-06-24',1,3,3,NULL),
+(14,'Jordanna','Raitt','Marketing Specialist',5844.00,'2011-10-23','1993-03-16',2,3,3,NULL),
+(15,'Guendolen','Motton','BI Consultant',8330.00,'2011-01-10','1980-10-22',2,3,6,NULL),
+(16,'Doria','Turbat','Senior SQL Analyst',9278.00,'2010-08-15','1983-01-11',1,1,6,NULL),
+(17,'Cort','Bewlie','Project Manager',5463.00,'2013-05-26','1986-10-05',1,5,3,NULL),
+(18,'Margarita','Eaden','SQL Analyst',5977.00,'2014-09-24','1978-10-08',2,1,6,2020-03-16),
+(19,'Hetty','Kingaby','SQL Analyst',7541.00,'2009-08-17','1999-04-25',1,2,6,'NULL'),
+(20,'Lief','Robardley','SQL Analyst',8981.00,'2002-10-23','1971-01-25',2,3,6,2016-07-01),
+(21,'Zaneta','Carlozzi','Working Student',1525.00,'2006-08-29','1995-04-16',1,3,6,2012-02-19),
+(22,'Giana','Matz','Working Student',1036.00,'2016-03-18','1987-09-25',1,3,6,NULL),
+(23,'Hamil','Evershed','Web Developper',3088.00,'2022-02-03','2012-03-30',1,4,2,NULL),
+(24,'Lowe','Diamant','Web Developper',6418.00,'2018-12-31','2002-09-07',1,4,2,NULL),
+(25,'Jack','Franklin','SQL Analyst',6771.00,'2013-05-18','2005-10-04',1,2,2,NULL),
+(26,'Jessica','Brown','SQL Analyst',8566.00,'2003-10-23','1965-01-29',1,1,2,NULL)
+
+Task 3.2:
+Insert the provided values into the departments table. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-45-028cd4a57cda9324639786daf3ae607d.png)
+
+Task 4
+
+Task 4.1:
+Promote Jack Franklin to 'Senior SQL Analyst' with a salary raise to $7200, and update the values accordingly.
+
+Task 4.2:
+Rename the 'Customer Support' position title to 'Customer Specialist' and update the values accordingly.
+
+Task 4.3:
+Give all SQL Analysts (excluding Senior SQL Analysts) a 6% salary raise, and update the salaries accordingly.
+
+Task 4.4:
+Calculate the average salary of SQL Analysts in the company (excluding Senior SQL Analysts).
+
+Task 5
+
+Task 5.1:
+Write a query that adds a column called manager containing first_name and last_name in one column and another column called is_active that indicates whether the employee is still active in the company. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-45-ee080b7812d315118f52b676dfbfac4b.png)
+
+Task 5.2:
+Create a view called v_employees_info from the previous query.
+
+Task 6
+
+Write a query that returns the average salaries for each position with appropriate rounding.
+
+Question:
+
+What is the average salary for a Software Engineer in the company.
+
+Task 7
+
+Write a query that returns the average salaries per division.
+
+Question:
+
+What is the average salary in the Sales department?
+
+Task 8
+
+Task 8.1:
+Write a query that returns emp_id, first_name, last_name, position_title, salary, and average salary for every job_position, ordered by emp_id. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-46-64c69bb4a9cabf9cc434a4e754dc7b93.png)
+
+Task 8.2:
+Count how many people earn less than their avg_position_salary and output the count directly.
+
+Task 9
+
+Write a query that returns a running total of the salary development ordered by the start_date. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-45-cd7ebf85b982ed6c458ec1ba79765054.png)
+
+Question:
+
+What was the total salary after 2018-12-31?
+
+Task 10
+
+Create the same running total but consider when people leave the company. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-45-cd7ebf85b982ed6c458ec1ba79765054.png)
+
+Question:
+
+What was the total salary after 2018-12-31?
+
+Hint 1:
+Use the view v_employees_info.
+
+Hint 2:
+Create to separate queries one with all employees and one with the people that have already left
+
+Hint 3:
+In the first query use start_date and in the second query use end_date instead of the start_date
+
+Hint 4:
+Multiply the salary of the second query with (-1).
+
+Hint 5:
+Create a subquery from that UNION and use a window function in that to create the running total.
+
+Task 11
+
+Task 11.1:
+Write a query that outputs only the top earner per position_title including first_name, position_title, and their salary. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-46-8a896f85dd6552df023234ecbc02897b.png)
+
+Question:
+
+What is the top earner with the position_title SQL Analyst?
+
+Task 11.2:
+Add the average salary per position_title to the previous query's output. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-46-8a896f85dd6552df023234ecbc02897b.png)
+
+Task 11.3:
+Remove employees from the output who have the same salary as the average of their position_title.
+
+Task 12
+
+Write a query that returns all meaningful aggregations grouped by division, department, and position_title. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-46-32f81b87932bc2494dfa2409327905ec.png)
+
+Task 13
+
+Write a query that returns all employees including their position_title, department, salary
+
+Question:
+
+Which employee (emp_id) is in rank 7 in the department Analytics?
+
+, and the rank of that salary partitioned by department. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-46-ee4c62ade30194de367965d239f4229e.png)
+
+Task 14
+
+Write a query that returns only the top earner of each department including their emp_id, position_title, department, and salary. [See image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-08-10_14-06-46-8a896f85dd6552df023234ecbc02897b.png)
+
+Question:
+
+Which employee (emp_id) is the top earner in the department Finance?
+
+############################## 14 - Stored procedures, transactions & user-defined functions
+
+Challenge:
+- Create a function that expects the customer's first and last name and returns the total amount of payments this customer has made.
+  - `SELECT name_search('AMY', 'LOPEZ')`
+
+Challenge:
+- The two employees Miller McQuarter and Christalle McKenny have agreed to swap their positions including their salary.
+  - Table schema:
+    - emp_id
+    - first_name
+    - last_name
+    - position_title
+    - salary
+
+Challenge:
+- Create a stored procedure called emp_swap that accepts two parameters emp1 and emp2 as input and swaps the two employees' position and salary.
+- Test the stored procedure with emp-id 2 and 3.
+
+############################## 15 - Indexes, Partitining & Query Optimization
+
+Challenge: 
+In this challenge, you need to create a user, a role, and add privileges. Your tasks are as follows:
+
+1. Create the user 'mia' with the password 'mia123'.
+2. Create the role 'analyst_emp'.
+3. Grant SELECT on all tables in the public schema to that role.
+4. Grant INSERT and UPDATE on the employees table to that role.
+5. Add the permission to create databases to that role.
+6. Assign that role to 'mia' and test the privileges with that user.
+
