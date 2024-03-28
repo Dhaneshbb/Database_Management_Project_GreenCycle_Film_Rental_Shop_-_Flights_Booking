@@ -1,0 +1,57 @@
+#OVER() with PARTITION BY 
+#OVER() with ORDER BY 
+#RANK() 
+#LEAD & LAG 
+#Additional challenge 
+
+
+
+############################## 11 - Window Functions
+
+Challenge:
+- Write a query that returns the list of movies including:
+  - film_id,
+  - title,
+  - length,
+  - category,
+  - average length of movies in that category.
+- Order the results by film_id.
+- Write a query that returns all payment details including the number of payments made by each customer and the amount.
+- Order the results by payment_id.
+
+Challenge: 
+- Write a query that returns the running total of flight delays (difference between actual_arrival and scheduled arrival) ordered by flight_id, including the departure airport.
+- As a second query, calculate the same running total, but also partition by the departure airport.
+
+Challenge: 
+- Write a query that returns the customers' name, the country, and the number of payments they have. Use the existing view customer_list.
+- Afterward, create a ranking of the top customers with the most sales for each country. Filter the results to only the top 3 customers per country.
+
+Challenge:
+- Write a query that returns the revenue of the day and the revenue of the previous day.
+  - Sum
+    - 62.86
+    - 563.64
+    - 736.30
+  - Day
+    - 2020-01-24
+    - 2020-01-25
+    - 2020-01-26
+  - Previous_day
+    - [null]
+    - 62.86
+    - 563.64
+  - Difference
+    - [null]
+    - 500.78
+    - 172.66
+- Afterwards, calculate the percentage growth compared to the previous day.
+
+Additional Challenge
+- Write a query that calculates the share of revenue each staff_id makes per customer. The result should include:
+  - First name,
+  - Last name,
+  - Staff_id,
+  - Total revenue,
+  - Percentage.
+  

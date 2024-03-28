@@ -1,0 +1,35 @@
+
+#ALTER TABLE 
+#CHECK 
+
+############################## 09 - Managing tables & databases
+
+Challenge 1
+
+#ALTER TABLE After create the table as below:
+CREATE TABLE director (
+director_id SERIAL PRIMARY KEY,
+director_account_name VARCHAR (20) UNIQUE,
+first_name VARCHAR(50) ,
+last_name VARCHAR(50) DEFAULT 'Not specified' ,
+date_of_birh DATE,
+address_id INT REFERENCES address (address_id))
+SELECT * FROM director
+
+1. Change the data type of `director_account_name` to VARCHAR (30).
+2. Remove the default value on `last_name`.
+3. Add the constraint `NOT NULL` to `last_name`.
+4. Add a new column `email` with data type VARCHAR (40).
+5. Rename `director_account_name` to `account_name`.
+6. Rename the table from `director` to `directors`.
+
+Challenge 2 
+
+- Create a table called `songs` with the following columns: `song_id`, `song_name`, `genre`, `price`, `release_date`.
+1. During creation, set the default value of `genre` to 'Not defined'.
+2. Add the `NOT NULL` constraint to the `song_name` column.
+3. Add a constraint with a default name to ensure the `price` is at least 1.99.
+4. Add the constraint `date_check` to ensure the `release_date` is between today and 01-01-1950.
+5. Try to insert a row with the following values: `song_id`, `song_name`, `genre`, `price`, `release_date`.
+6. Modify the constraint to allow 0.99 as the lowest possible price.
+7. Try again to insert the row.

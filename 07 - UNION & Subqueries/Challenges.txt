@@ -1,0 +1,30 @@
+#Subqueries in WHERE 
+#Subqueries in FROM 
+#Subqueries in SELECT 
+#Correlated subqueries in WHERE 
+#More challenges Correlated subqueres 
+
+
+############################## 07 - UNION & Subqueries
+Challenge 1:
+- Select all of the films where the length is longer than the average of all films.
+- Return all the films that are available in the inventory in store 2 more than 3 times.
+- Return all customers' first names and last names that have made a payment on '2020-01-25'.
+- Return all customers' first names and email addresses that have spent more than $30.
+- Return all the customers' first and last names that are from California and have spent more than $100 in total.
+
+Challenge 2:
+- What is the average total amount spent per day (average daily revenue)?
+
+Challenge 3:
+- Show all the payments together with how much the payment amount is below the maximum payment amount.
+
+Challenge 4:
+- Show only those movie titles, their associated film-id, and replacement_cost with the lowest replacement_costs for in each rating category - also show the rating.
+- Show only those movie titles, their associated film_id, and the length that have the highest length in each rating category - also show the rating.
+
+More Challenges:
+- Show all the payments plus the total amount for every customer as well as the number of payments of each customer.
+- Show only those films with the highest replacement costs in their rating category plus show the average replacement cost in their rating category.
+- Show only those payments with the highest payment for each customer's first name - including the payment_id of that payment.
+- How would you solve it if you would not need to see the payment ID?

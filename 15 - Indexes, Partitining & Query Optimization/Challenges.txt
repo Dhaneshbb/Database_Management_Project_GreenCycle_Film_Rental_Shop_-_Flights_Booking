@@ -1,0 +1,13 @@
+#Privileges
+
+############################## 15 - Indexes, Partitining & Query Optimization
+
+Challenge: 
+In this challenge, you need to create a user, a role, and add privileges. Your tasks are as follows:
+
+1. Create the user 'mia' with the password 'mia123'.
+2. Create the role 'analyst_emp'.
+3. Grant SELECT on all tables in the public schema to that role.
+4. Grant INSERT and UPDATE on the employees table to that role.
+5. Add the permission to create databases to that role.
+6. Assign that role to 'mia' and test the privileges with that user.

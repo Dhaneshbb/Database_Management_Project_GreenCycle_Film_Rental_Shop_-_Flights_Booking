@@ -1,0 +1,38 @@
+
+#LENGTH, LOWER & UPPER 
+#LEFT & RIGHT 
+#Concatenate 
+#POSITION 
+#SUBSTRING 
+#EXTRACT 
+#TO_CHAR 
+#Intervals & Timestamps
+
+############################## 04 - Functions
+
+Challenge 1:
+- Identify customers whose first name or last name is more than 10 characters long, and output their names in all lowercase.
+
+Challenge 2:
+- Extract the last 5 characters of the email address, which always ends with '.org'. Additionally, extract just the dot '.' from the email address.
+
+Challenge 3:
+- Create an anonymized version of the email addresses where the first character is followed by '*', and then the last part starting with '@'. Note: email addresses always end with '@sakilacustomer.org'.
+
+Challenge 4:
+- Extract the first name from the email address and concatenate it with the last name, formatting it as "Last name, First name".
+
+Challenge 5:
+- Anonymize email addresses by displaying only the first and last letters of the local part, followed by '*', and then the first letter of the domain, followed by '.*@sakilacustomer.org'.
+
+Challenge 6:
+- Analyze payments to find the month and day of the week with the highest total payment amount, as well as the highest amount spent by a customer in a week.
+
+Challenge 7:
+- Sum and group data in the following formats:
+  - "Fri, 24/01/2020"
+  - "May, 2020"
+  - "Thu, 02:44"
+
+Challenge 8:
+- Create a list of all rental durations for customer_id 35, and determine which customer has the longest average rental duration.

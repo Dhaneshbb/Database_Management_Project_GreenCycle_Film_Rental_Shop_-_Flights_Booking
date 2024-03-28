@@ -1,0 +1,21 @@
+#SELECT 
+#ORDER BY
+#SELECT DISTINCT
+#LIMIT
+#COUNT
+#COUNT DISTINCT
+
+Challenge 1:
+- The Marketing Manager requests a list of all customers, including their first name, last name, and email address.
+
+Challenge 2:
+- The Marketing Manager asks to order the customer list by last name in descending order (from "Z" to "A"). If last names are the same, the order should be based on first name in descending order as well.
+
+Challenge 3:
+- A marketing team member inquires about the different prices that have been paid, ordered from highest to lowest.
+
+Today's Challenges:
+1. Create a list of all the distinct districts customers are from.
+2. Determine the latest rental date.
+3. Find out how many films the company has.
+4. Count the number of distinct last names among the customers.

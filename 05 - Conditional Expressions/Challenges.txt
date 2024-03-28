@@ -1,0 +1,23 @@
+
+#Mathematical functions and operators 
+#CASE WHEN 
+#CAST & COALESCE  
+
+
+############################## 05 - Conditional Expressions
+
+Challenge 1:
+- Create a list of films including the ratio of rental rate to replacement cost, where the rental rate is less than 4% of the replacement cost. Display the film_ids along with the percentage rounded to 2 decimal places.
+
+Challenge 2:
+- Determine the number of flights that departed in each season: Winter (December, January, February), Spring (March, April, May), Summer (June, July, August), and Fall (September, October, November).
+- Create a tier list based on certain criteria:
+  1. Movies with a rating of 'PG' or 'PG-13', or a length greater than 210 minutes: 'Great rating or long (tier 1)'.
+  2. Movies with a description containing 'Drama' and a length greater than 90 minutes: 'Long drama (tier 2)'.
+  3. Movies with a description containing 'Drama' and a length not greater than 90 minutes: 'Short drama (tier 3)'.
+  4. Movies with a rental rate less than $1: 'Very cheap (tier 4)'.
+- If a movie fits into multiple categories, assign it the higher tier.
+- Filter the movies to include only those that fall into one of these four tiers.
+
+Challenge 3:
+- Replace null values in the dataset.

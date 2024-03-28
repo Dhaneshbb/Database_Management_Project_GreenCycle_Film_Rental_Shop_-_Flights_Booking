@@ -1,0 +1,134 @@
+
+Topic: DISTINCT
+Topic: CASE + GROUP BY
+Topic: JOIN
+Topic: JOIN & GROUP BY
+Topic: JOIN & GROUP BY
+Topic: LEFT JOIN & FILTERING
+Topic: JOIN & GROUP BY
+Topic: JOIN & GROUP BY
+Topic: Uncorrelated subquery
+Topic: EXTRACT + Uncorrelated subquery
+Topic: Correlated subquery
+Topic: Uncorrelated subquery
+Topic: Uncorrelated subquery
+Topic: Correlated and uncorrelated subqueries (nested)
+
+
+############################## 08 - Course project
+
+#Question 1:
+
+Task: Create a list of all the different (distinct) replacement costs of the films.
+
+Question: What's the lowest replacement cost?
+
+Answer Will be: $9.99
+
+#Question 2:
+
+Task: Write a query that gives an overview of how many films have replacements costs in the following cost ranges:
+
+- low: $9.99 - $19.99
+- medium: $20.00 - $24.99
+- high: $25.00 - $29.99
+
+Question: How many films have a replacement cost in the "low" group?
+
+Answer Will be: 514
+
+#Question 3:
+
+Task: Create a list of the film titles including their title, length, and category name ordered descendingly by the length. Filter the results to only the movies in the category 'Drama' or 'Sports'.
+
+Question: In which category is the longest film, and how long is it?
+
+Answer Will be: Sports and 184 minutes
+
+#Question 4:
+
+Task: Create an overview of how many movies (titles) there are in each category (name).
+
+Question: Which category (name) is the most common among the films?
+
+Answer Will be: Sports with 74 titles
+
+#Question 5:
+
+Task: Create an overview of the actors' first and last names and in how many movies they appear.
+
+Question: Which actor is part of the most movies?
+
+Answer Will be: Susan Davis with 54 movies
+
+#Question 6:
+
+Task: Create an overview of the addresses that are not associated with any customer.
+
+Question: How many addresses are that?
+
+Answer Will be: 4
+
+#Question 7:
+
+Task: Create an overview of the cities and how much sales (sum of amount) have occurred there.
+
+Question: Which city has the most sales?
+
+Answer Will be: Cape Coral with a total amount of $221.55
+
+#Question 8:
+
+Task: Create an overview of the revenue (sum of amount) grouped by a column in the format "country, city".
+
+Question: Which country, city has the least sales?
+
+Answer Will be: United States, Tallahassee with a total amount of $50.85
+
+#Question 9:
+
+Task: Create a list with the average of the sales amount each staff_id has per customer.
+
+Question: Which staff_id makes in average more revenue per customer?
+
+Answer Will be: staff_id 2 with an average revenue of $56.64 per customer
+
+#Question 10:
+
+Task: Create a query that shows the average daily revenue of all Sundays.
+
+Question: What is the daily average revenue of all Sundays?
+
+Answer Will be: $1410.65
+
+#Question 11:
+
+Task: Create a list of movies - with their length and their replacement cost - that are longer than the average length in each replacement cost group.
+
+Question: Which two movies are the shortest in that list and how long are they?
+
+Answer Will be: CELEBRITY HORN and SEATTLE EXPECTATIONS with 110 minutes
+
+#Question 12:
+
+Task: Create a list that shows how much the average customer spent in total (customer lifetime value) grouped by the different districts.
+
+Question: Which district has the highest average customer lifetime value?
+
+Answer Will be: Saint-Denis with an average customer lifetime value of $216.54
+
+#Question 13:
+
+Task: Create a list that shows all payments including the payment_id, amount, and the film category (name) plus the total amount that was made in this category. Order the results ascendingly by the category (name) and as the second order criterion by the payment_id ascendingly.
+
+Question: What is the total revenue of the category 'Action' and what is the lowest payment_id in that category 'Action'?
+ 
+Answer Will be: Total revenue in the category 'Action' is $4375.85 and the lowest payment_id in that category is 16055.
+
+#Bonus Question 14:
+
+Task: Create a list with the top overall revenue of a film title (sum of amount per title) for each category (name).
+
+Question: Which is the top-performing film in the animation category?
+
+Answer Will be: DOGMA FAMILY with $178.70.

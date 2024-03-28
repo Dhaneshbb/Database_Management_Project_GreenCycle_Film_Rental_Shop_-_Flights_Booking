@@ -1,0 +1,44 @@
+
+#INNER JOIN 
+#LEFT OUTER JOIN  
+#Joins 
+#Joins on multiple conditions 
+#Joining multiple tables 
+
+############################## 06 - Joins
+Challenge 1:
+- The airline company wants to understand in which category they sell most tickets.
+- How many people choose seats in the category Business, Economy, or Comfort?
+
+Challenge 2:
+- The flight company is trying to find out what their most popular seats are.
+- Find out which seat has been chosen most frequently. Ensure all seats are included even if they have never been booked.
+- Are there seats that have never been booked?
+- Determine which row (A, B,...,H) has been chosen most frequently.
+
+Challenge 3:
+- The company wants to run a phone call campaign on all customers in Texas (district).
+- Identify customers (first_name, last_name, phone number, and their district) from Texas.
+- Are there any (old) addresses that are not related to any customer?
+
+Challenge 4:
+- Get the average amount for different seat numbers.
+
+Challenge 5:
+- The company wants to customize their campaigns to customers depending on the country they are from.
+- Which customers are from Brazil?
+- Write a query to get first_name, last_name, email, and the country from all customers from Brazil.
+
+Additional Questions:
+
+Question 1:
+- Which passenger (passenger_name) has spent the most amount in their bookings (total_amount)?
+Answer: ALEKSANDR IVANOV with 80964000.
+
+Question 2:
+- Which fare_condition has ALEKSANDR IVANOV used the most?
+Answer: Economy 2131 times.
+
+Question 3:
+- Which title has GEORGE LINTON rented the most often?
+Answer: CADDYSHACK JEDI - 3 times.

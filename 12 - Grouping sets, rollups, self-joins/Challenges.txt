@@ -1,0 +1,41 @@
+#GROUPING SETS 
+#ROLLUP 
+#CUBE 
+#Self joins 
+
+
+############################## 12 - Grouping sets, rollups, self-joins
+
+Challenge:
+- Write a query that returns the sum of the amount for each customer (first name and last name) and each staff_id. Also, add the overall revenue per customer.
+
+Challenge:
+- Write a query that calculates a booking amount rollup for the hierarchy of quarter, month, week in month, and day.
+
+Challenge:
+- Write a query that returns all grouping sets in all combinations of customer_id, date, and title with the aggregation of the payment amount.
+- The desired result should look like this:
+  - customer_id
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+  - date
+    - 2020-01-25
+    - 2020-01-25
+    - 2020-01-28
+    - 2020-01-28
+    - 2020-02-15
+    - 2020-02-15
+  - title
+    - PATIENT SISTER
+    - [null]
+    - TALENTED HOMICIDE
+    - [null]
+    - DETECTIVE VISION
+    - FERRIS MOTHER
+
+Challenge:
+- Find all the pairs of films with the same length! As the columns, use title, title, and length.

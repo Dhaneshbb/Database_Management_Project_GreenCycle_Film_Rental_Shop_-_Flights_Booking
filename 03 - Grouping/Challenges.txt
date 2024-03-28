@@ -1,0 +1,23 @@
+#Aggregate function 
+#group by 
+#GROUP by multiple columns 
+#Having 
+
+
+############################## 03 - Grouping
+
+Challenge 1:
+- Your manager wants to gain insight into the films' replacement cost. Write a query to determine the minimum, maximum, average (rounded), and sum of the replacement cost of the films.
+
+Challenge 2:
+1. Determine which of the two employees (staff_id) is responsible for more payments.
+2. Find out which of the two employees is responsible for a higher overall payment amount.
+3. Calculate the changes in these amounts if payments with an amount equal to 0 are excluded.
+
+Challenge 3:
+1. Determine which employee had the highest sales amount in a single day.
+2. Find out which employee had the most sales in a single day (excluding payments with amount = 0).
+
+Challenge 4:
+1. Focus on the days with very high revenue in April 2020 (April 28, 29, and 30).
+2. Calculate the average payment amount grouped by customer and day, considering only days and customers with more than 1 payment. Order the results by the average amount in descending order.

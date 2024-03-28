@@ -1,0 +1,23 @@
+#User-defined functions 
+#Transactions 
+#Stored procedures 
+
+############################## 14 - Stored procedures, transactions & user-defined functions
+
+Challenge:
+- Create a function that expects the customer's first and last name and returns the total amount of payments this customer has made.
+  - `SELECT name_search('AMY', 'LOPEZ')`
+
+Challenge:
+- The two employees Miller McQuarter and Christalle McKenny have agreed to swap their positions including their salary.
+- Table schema:
+	- emp_id
+	- first_name
+	- last_name
+	- position_title
+	- salary
+
+Challenge:
+- Create a stored procedure called emp_swap that accepts two parameters emp1 and emp2 as input and swaps the two employees' position and salary.
+- Test the stored procedure with emp-id 2 and 3.
+

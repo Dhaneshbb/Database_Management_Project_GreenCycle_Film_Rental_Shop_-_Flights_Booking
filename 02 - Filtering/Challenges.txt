@@ -1,0 +1,35 @@
+#WHERE
+#WHERE operators 
+#WHERE with ANDOR 
+#BETWEEN 
+#IN 
+#LIKE 
+
+
+############################## 02 - Filtering
+
+Challenge 1:
+- How many payments were made by the customer with customer_id = 100?
+- What is the last name of our customer with first name 'ERICA'?
+
+Challenge 2:
+- Rentals that have not been returned yet.
+- List of payment_ids with an amount less than or equal to $2.
+
+Challenge 3:
+- List of payments for customers 322, 346, and 354 where the amount is either less than $2 or greater than $10. It should be ordered by customer first (ascending) and then by amount in descending order.
+
+Challenge 4:
+- Number of payments made on January 26th and 27th, 2020 with an amount between 1.99 and 3.99.
+
+Challenge 5:
+- List of concerned payments based on 6 complaints from customers with IDs: 1, 2, 25, 67, 93, 124, 234. These payments should have occurred in January 2020 with amounts of 4.99, 7.99, and 9.99.
+
+Challenge 6:
+- Count of movies containing "Documentary" in the description.
+- Count of customers with a first name that is 3 letters long and ends with either 'X' or 'Y' in the last name.
+
+Day's Challenges:
+1. Number of movies containing 'Saga' in the description and having titles starting with 'A' or ending with 'R'. Use the alias 'no_of_movies'.
+2. List of all customers with 'ER' in the first name and 'A' as the second letter, ordered by last name in descending order.
+3. Count of payments with amounts either 0 or between 3.99 and 7.99, occurring on May 1st, 2020.
