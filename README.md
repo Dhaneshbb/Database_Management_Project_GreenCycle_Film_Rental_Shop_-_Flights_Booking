@@ -1,4 +1,4 @@
-## Title: Database Management Project: GreenCycle Rental Shop & Flights Booking
+## Title: Database Management Project: GreenCycle Film Rental Shop & Flights Booking
 
 ---
 
