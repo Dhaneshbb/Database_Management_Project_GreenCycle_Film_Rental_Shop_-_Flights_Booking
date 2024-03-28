@@ -33,21 +33,23 @@ Referece -15 Days of SQL: The Complete SQL Masterclass 2024, [See Link](https://
 
 See the project by folder wise: 
 
-01 - Getting started with SQL!
-02 - Filtering
-03 - Grouping
-04 - Functions
-05 - Conditional Expressions
-06 - Joins
-07 - UNION & Subqueries
-08 - Course project
-09 - Managing tables & databases
-10 - Views & Data Manipulation
-11 - Window Functions
-12 - Grouping sets, rollups, self-joins
-13 - Course project
-14 - Stored procedures, transactions & user-defined functions
-15 - Indexes, Partitining & Query Optimization
+
+1. 01 - Getting started with SQL!
+2. 02 - Filtering
+3. 03 - Grouping
+4. 04 - Functions
+5. 05 - Conditional Expressions
+6. 06 - Joins
+7. 07 - UNION & Subqueries
+8. 08 - Course project
+9. 09 - Managing tables & databases
+10. 10 - Views & Data Manipulation
+11. 11 - Window Functions
+12. 12 - Grouping sets, rollups, self-joins
+13. 13 - Course project
+14. 14 - Stored procedures, transactions & user-defined functions
+15. 15 - Indexes, Partitining & Query Optimization
+
 
 ---
 
